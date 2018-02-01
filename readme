@@ -2,7 +2,7 @@
 Color Your Thoughts is an interactive Javascript browser-based experiment that paints your screen in color palettes based on your spoken words.
 
 ## Setup
-1. Download: ```git clone https://github.com/JeffJassky/Color-your-Thoughts.git```
+1. Download: ```git clone https://github.com/JeffJassky/Color-Your-Thoughts.git```
 2. Install: ```npm install```
 3. Launch: ```node server.js```
 4. View: ```http://localhost:3000```
