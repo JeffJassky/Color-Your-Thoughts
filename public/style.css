@@ -1,0 +1,167 @@
+body{
+	overflow: hidden;
+    background: linear-gradient(233deg, #39fff8, #5b82ff, #6a39ff, #ff1fd9, #ff3939, #ffcd00);
+    background-size: 1200% 1200%;
+    -webkit-animation: bgGradient 49s ease infinite;
+    -moz-animation: bgGradient 49s ease infinite;
+    animation: bgGradient 49s ease infinite;
+    transition: background 2s;
+}
+
+.instructions{
+	position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -160px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.background{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: skewy(-20deg);
+    transition: background 2s;
+}
+.layer{
+	position:absolute;
+    box-shadow: 0px 0px 100px rgba(0,0,0,0.1);
+    opacity: 0.8;
+    background: transprent;
+    opacity:0;
+}
+.layer:nth-child(1){
+	width:100%;
+	height:100%;
+    transition: background 2s;
+}
+.layer:nth-child(4){
+	width:20%;
+	height:20%;
+	bottom:0;
+	left:0;
+    transition: background 2s;
+}
+.layer:nth-child(5){
+	width:20%;
+	height:20%;
+	bottom:20%;
+	left:0;
+    transition: background 3s;
+}
+.layer:nth-child(2){
+	width:25%;
+	height:100%;
+	right:10%;
+    transition: background 4s;
+}
+.layer:nth-child(3){
+	width:70%;
+	height:20%;
+	top:20%;
+	right:-10%;
+    transition: background 3s;
+}
+
+.thought-wrapper{
+	position: absolute;
+    top: 0;
+    right: 10%;
+    bottom: 0;
+    left: 10%;
+    display: table-cell;
+    text-align: center;
+    z-index: 10;
+    font-size: 3em;
+    top: 40%;
+    color: #fff;
+    font-family: 'Ovo', sans-serif;
+}
+.image{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition: .4s;
+    opacity: 0;
+}
+
+.image.shown{
+    opacity:1;
+}
+.comment{
+    font-size: .4em;
+    opacity: .8;
+}
+button{
+    margin-top: 25px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-family: 'Ovo', sans-serif;
+    transition: all .3s;
+}
+button:hover{
+	transform: scale(1.1);
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bgGradient {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@-moz-keyframes bgGradient {
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
+@keyframes bgGradient { 
+    0%{background-position:91% 0%}
+    50%{background-position:10% 100%}
+    100%{background-position:91% 0%}
+}
