@@ -20,6 +20,7 @@ Colors from the resulting images are represented as a vibrant palette on the scr
 
 ## What's next?
 ### Polishing what's here
-Adding loading indicators between search terms, circumventing daily limitations on Google Images API, fixing edge cases like sitting idle for long periods of time, limit search to photographs only (the API documentation for this doesn't seem to be working)
+Obfuscate the Google Images API Key and CX by moving the query to a server-side proxy, adding loading indicators between search terms, circumventing daily limitations on Google Images API, create handling for edge cases like sitting idle without speaking for long periods of time, and limit image search to photographs only, which is currently configured according to Google search docs, however results are not coming back as expected. Would file ticket with Google.
+
 ### Feature ideas
 Saving individual color palettes & color palette history, adding audio for ambient sounds and user cursor and voice interactions.
