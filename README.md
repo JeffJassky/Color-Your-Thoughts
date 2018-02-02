@@ -5,7 +5,7 @@ Color Your Thoughts is an interactive Javascript browser-based experiment that p
 1. Download: ```git clone https://github.com/JeffJassky/Color-Your-Thoughts.git```
 2. Install: ```npm install```
 3. Launch: ```node server.js```
-4. View: ```http://localhost:3000```
+4. View: ```http://localhost:3000``` (Only tested in Chrome 63)
 
 ## Usage
 1. Find a quiet space
